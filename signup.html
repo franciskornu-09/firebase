@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FireBase</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="myScript.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type="text/javascript">
+	var config = {
+    apiKey: "AIzaSyBoiBiHQlnRNdPX8_NhKEVB9xAHjeCWOyU",
+    authDomain: "cyfa-35c11.firebaseapp.com",
+    databaseURL: "https://cyfa-35c11.firebaseio.com",
+    projectId: "cyfa-35c11",
+    storageBucket: "cyfa-35c11.appspot.com",
+    messagingSenderId: "763334751531"
+  };
+  firebase.initializeApp(config);
+</script>
+<style type="text/css">
+  #box{
+    border-style: outset;
+  }
+</style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="fire.png" width="40" height="35"><a class="navbar-brand" href="#">Firebase</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+    </ul>
+  </div>
+</nav>
+</head>
+<body>
+ <div class="container">
+ 	<form id="box" class="col-md-8" style="margin-left: 18%">
+	    <div class="form-group">
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="email" class="form-control" id="email" placeholder="Email">
+	    </div>
+	    <div class="form-group">
+	    <label for="exampleInputEmail1">Password</label>
+	    <input type="password" class="form-control" id="password" placeholder="Password">
+	    </div>
+	    <a type="button" class="btn btn-primary" onclick="signUp()">Sign Up</a> 
+ 	</form>
+ </div>
+</body>
+</html>
