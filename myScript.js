@@ -26,6 +26,7 @@
       const auth = firebase.auth();
 
       const response = auth.createUserWithEmailAndPassword(emailText, passwordText);
+      response.then(user => window.location = 'index.html');
   }
 
   function addData() {
